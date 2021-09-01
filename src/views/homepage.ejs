@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -20,9 +19,9 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-7">
-            <form method="POST" action="/send-notification-individual">
+            <form method="POST" action="/send-notification">
               <main>
-                <h2>Notificação Telegram</h2>
+                <h2>Bot Notification</h2>
                 <div class="form-group">
                   <label for="fullName">Nome:</label>
                   <input
@@ -41,7 +40,7 @@
                     class="form-control"
                     id="email"
                     name="email"
-                    placeholder="Email ..."
+                    placeholder="Email..."
                     required
                   />
                   <div class="form-group">
@@ -51,7 +50,7 @@
                       class="form-control"
                       id="empresa"
                       name="empresa"
-                      placeholder="Empresa ..."
+                      placeholder="Empresa..."
                       required
                     />
                 </div>
@@ -61,19 +60,13 @@
                     id="description"
                     class="form-control"
                     name="description"
-                    placeholder="Digite seu texto aqui ..."
+                    placeholder="Digite seu texto aqui..."
                     required
                   ></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
               </main>
-            </form>
-            <div >
-              <input type ="checkbox" id="individual" name="individual"><label>Individual</label>
-            </div>
-            <div >
-              <input type ="checkbox" id="grupo" name="grupo"><label>Grupo</label>
-            </div>
+            </form>         
           </div>
         </div>
       </div>
